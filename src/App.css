@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2.4em;
+}
+.divider {
+  width: 8%;
+  height: 3px;
+  background-color: #2caeba;
+}
+.items {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+.btn-container {
+  width: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-container button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 0 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-btn {
+  color: #2caeba;
+  border-left: 2px solid #2caeba !important;
+  padding-left: 20px !important;
+}
+.item {
+  width: 70%;
+}
+.job-desc{
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-desc span{
+  margin-right: 10px;
+  color: #2caeba;
 }
